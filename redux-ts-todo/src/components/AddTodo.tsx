@@ -1,7 +1,7 @@
 import React from "react";
 
 const AddTodo: React.FC = props => {
-  return (<></>)
-}
+  return <></>;
+};
 
-export default AddTodo
+export default AddTodo;

@@ -18,15 +18,16 @@ const TodoList: React.FC = props => {
       {todos.map((todo: Todo) => (
         <li
           key={todo.id}
-          onClick={() => {toggleTodo(todo.id)}}
+          onClick={() => {
+            toggleTodo(todo.id);
+          }}
           style={{
             textDecoration: `${todo.done ? "line-through" : "none"}`
           }}
-        >
-        </li>
+        ></li>
       ))}
     </ul>
   );
-}
+};
 
 export default TodoList;

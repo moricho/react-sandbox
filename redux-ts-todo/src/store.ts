@@ -9,7 +9,7 @@ middlewares.push(logger);
 const store = configureStore({
   reducer: rootReducer,
   middleware: middlewares
-})
+});
 
 export type AppDispatch = typeof store.dispatch;
 

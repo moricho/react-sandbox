@@ -10,6 +10,6 @@ const App = () => {
       <TodoList />
     </div>
   );
-}
+};
 
 export default App;
