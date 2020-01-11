@@ -1,15 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface Todo {
-  id: number;
-  text: string;
-  done: boolean;
-}
-
-interface TodoState {
-  nextTodoId: number;
-  list: Todo[];
-}
+import {Todo, TodoState} from "../model/todo";
 
 const todoInitialState: TodoState = {
   nextTodoId: 0,
@@ -26,6 +17,7 @@ const todoModule = createSlice({
         text: action.payload,
         done: false
       };
+      state.list.push(todo);
     },
 
     toggleTodo: (state: TodoState, action: PayloadAction<number>) => {
