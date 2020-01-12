@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { todoListSelector } from "../selectors/todo";
-import todoModule from "../modules/todo";
-import { Todo } from "../model/todo";
+import { todoListSelector } from "@/selectors/todo";
+import todoModule from "@/modules/todo";
+import { Todo } from "@/model/todo";
 
 const TodoList: React.FC = props => {
   const todos = useSelector(todoListSelector);
